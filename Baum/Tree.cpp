@@ -7,7 +7,7 @@ Tree::Tree() {
 
 
 Tree::~Tree() {
-	destroy(root);
+	//destroy(root);
 }
 
 Tree::Tree(const Tree &orig) {
