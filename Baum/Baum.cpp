@@ -45,8 +45,8 @@ int main() {
 	BST bst;
 	bst.root = new Node(5);
 	cout << "BST root erstellt!" << endl;
-	bst.insert(bst.root, 3);
-	bst.insert(bst.root, 1);
+	bst.insert(bst.root, 3);	
+	bst.insert(bst.root, 1);						
 	bst.insert(bst.root, 2);
 	bst.insert(bst.root, 10);
 	bst.insert(bst.root, 7);
@@ -61,8 +61,11 @@ int main() {
 	bst.ebenen();
 
 	cout << "BST Ebenen ausgegeben" << endl;
+	cout << "Gebe alle Knoten der dritten Ebene wieder" << endl;
+	//bst.level(bst.root, 3);
 
 	system("pause");
+
 
 	return 0;
 }

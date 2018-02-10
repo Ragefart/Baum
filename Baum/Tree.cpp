@@ -63,6 +63,8 @@ bool Tree::empty(Node* p) {
 	}
 }
 
+//LINKS - AUSGABE - RECHTS
+//alphabetisch sortiert wenn korrekt eingefügt wurde
 void Tree::inorder(Node* p) { // print inorder: LDR
 	if (p == nullptr) {
 		return;
@@ -72,8 +74,34 @@ void Tree::inorder(Node* p) { // print inorder: LDR
 	inorder(p->getrightchild()); // right
 }
 
+//LINKS - RECHTS - AUSGABE
+void Tree::postorder(Node* p) {
+	if (p == nullptr) {
+		return;
+	}
+	postorder(p->getleftchild());
+	postorder(p->getrightchild());
+	cout << p->getvalue() << " "; //info
+
+}
+
+//AUSGABE - LINKS - RECHTS
+void Tree::preorder(Node* p) {
+	if (p == nullptr) {
+		return;
+	}
+	cout << p->getvalue() << " "; //info
+	preorder(p->getleftchild());
+	preorder(p->getrightchild());
+}
+
 void Tree::print() {
 	inorder(root);
+	cout << endl;
+	preorder(root);
+	cout << endl;
+	postorder(root);
+	cout << endl;
 }
 
 void Tree::newtree(Node* a, Node* w, Node* b) {

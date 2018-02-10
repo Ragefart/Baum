@@ -16,6 +16,7 @@ public:
 	void setvalue(int newnumber);
 	void setleftchild(Node* left);
 	void setrightchild(Node* right);
+	
 private:
 	Node* leftChild;
 	Node* rightChild;

@@ -29,6 +29,7 @@ Node::Node(Node* a) {
 Node::~Node() {
 }
 
+
 Node* Node::getleftchild() {
 	return leftChild;
 }

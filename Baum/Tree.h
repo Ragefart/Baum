@@ -15,6 +15,8 @@ public:
 	bool empty();
 	bool empty(Node* p);
 	void inorder(Node* p);
+	void preorder(Node* p);
+	void postorder(Node* p);
 	void print();
 	void newtree(Node* a, Node* w, Node* b);
 	void destroy(Node* p);

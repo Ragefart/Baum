@@ -29,6 +29,8 @@ void BST::insert(Node* p, int a) {
 	}
 }
 
+//Gibt die einzelnen Ebenen eines Baumes aus
+//Von der Wurzel nach unten (der Höhe nach gerichtet)
 void BST::ebenen() {
 	if (root != nullptr) {
 		queue<Node*> q;
