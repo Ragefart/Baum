@@ -10,6 +10,12 @@ BST::~BST() {
 	destroy(root);
 }
 
+
+
+//Gibt einen neuen Knoten mit Wert a in den Baum ein.
+//Gestartet wird von p, meist der root
+//Der neue Knoten wird an der korrekten position eingefügt sodass 
+//der Baum ein BST ist
 void BST::insert(Node* p, int a) {
 	if (a >= p->getvalue()) {
 		if (p->getrightchild() == nullptr) {

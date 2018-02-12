@@ -42,7 +42,7 @@ void Tree::destroy(Node* p) {
 }
 
 
-
+//Prüft ob der Baum ab root leer ist
 bool Tree::empty() {
 	cout << endl;
 	if (root == nullptr) {
@@ -53,6 +53,7 @@ bool Tree::empty() {
 	}
 }
 
+//Prüft ob der Teilbaum leer ist
 bool Tree::empty(Node* p) {
 	cout << endl;
 	if (p == nullptr) {
@@ -95,6 +96,8 @@ void Tree::preorder(Node* p) {
 	preorder(p->getrightchild());
 }
 
+
+//Ruft die Helperfunktionen auf und gibt den Baum aus
 void Tree::print() {
 	inorder(root);
 	cout << endl;
@@ -104,6 +107,9 @@ void Tree::print() {
 	cout << endl;
 }
 
+
+//erstellt einen neuen Baum uas den Teilbäumen a und b
+//mit der Wurzel w
 void Tree::newtree(Node* a, Node* w, Node* b) {
 	root = w;
 	root->setleftchild(a);
