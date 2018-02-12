@@ -117,3 +117,13 @@ void Tree::newtree(Node* a, Node* w, Node* b) {
 }
 
 
+
+//Überladung des Zuweisungsoperator
+//Bei gegebenem Tree A kann man schreiben
+//Tree B = A;
+Tree Tree::operator=(const Tree &a) {
+	root = copyhelper(a.root);
+	return *this;
+}
+
+

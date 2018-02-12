@@ -20,7 +20,7 @@ public:
 	void print();
 	void newtree(Node* a, Node* w, Node* b);
 	void destroy(Node* p);
-
+	Tree operator=(const Tree &a);
 private:
 
 };
